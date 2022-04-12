@@ -10,7 +10,7 @@ package za.ac.tut.business.iteminterface;
  * @author lubay
  */
 public interface ItemInterface {
-    public double SOCK_PRICE=10.00;
+    public double SOCK_PRICE=20.00;
     public double CAP_PRICE=30.00;
     public double SHOE_PRICE=50.00;
 }

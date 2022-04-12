@@ -43,9 +43,11 @@ public class StartServlet extends HttpServlet {
 
     private void initialiseSession(HttpSession session, String name) {
         List<Item> items = new ArrayList<>();
+        Double totalAmountDue=0.00;
         
       session.setAttribute("name", name);
       session.setAttribute("items", items);
+      session.setAttribute("totalAmountDue", totalAmountDue);
     }
 
 }

@@ -32,6 +32,16 @@ public class ShoppingEJB implements ShoppingEJBLocal {
     @Override
     public Double determineAmountDue(HttpSession session) {
       Double totalAmountDue=0.00;
+      List<Item> items = (List) session.getAttribute("items");
+      
+      for(int i=0;i<items.size();i++){
+          //we get an item at index
+          Item item = items.get(i);
+          
+          totalAmountDue+=item.amountDue();
+      }
+      
+      return totalAmountDue;
     }
     
 }

@@ -18,5 +18,7 @@ import za.ac.tut.business.item.Item;
 public interface ShoppingEJBLocal {
 
     List<Item> listOfProducts(HttpSession session);
+
+    Double determineAmountDue(HttpSession session);
     
 }

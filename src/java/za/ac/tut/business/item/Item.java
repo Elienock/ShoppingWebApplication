@@ -40,13 +40,13 @@ public class Item {
         this.productName = productName;
     }
    
- public Double AmountDue(){
+ public Double amountDue(){
     String productName = getProductName();
     int qty= getQty();
     Double amountDue=0.00;
     
        switch (productName) {
-           case "socks":
+           case "sock":
                amountDue = qty * SOCK_PRICE;
                break;
            case "cap":
